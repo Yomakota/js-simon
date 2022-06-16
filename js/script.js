@@ -53,4 +53,4 @@ setTimeout(function () {
         message.innerHTML = `Hai indovinato ${userNum.length} numeri e sono: ${userNum} `;
 
     }
-}, 1000)
+}, 30000)
