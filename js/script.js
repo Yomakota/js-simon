@@ -38,19 +38,19 @@ setTimeout(function () {
     console.log(userNum);
 
     // ciclo for per creare 5 prompt
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < randomNum.length; i++) {
     
         // prompt per chiedere i numeri all'utente
-        const insertNum = parseInt(prompt('quale ricordi?'));
+        const insertNum = parseInt(prompt('Quale ricordi?'));
 
-// condizione per controllare se i numeri inseriti sono uguali a quelli generati dal programma 
+        // condizione per controllare se i numeri inseriti sono uguali a quelli generati dal programma 
         if (randomNum.includes(insertNum)) {
-// e se lo sono pusharli nell array per fare un confronto
+        // e se lo sono pusharli nell array per fare un confronto
             userNum.push(insertNum);
         }
 
         // stampo il punteggio
-        message.innerHTML = `Hai indovinato ${userNum.length} numeri e sono: ${userNum} `;
+        message.innerHTML = `Hai indovinato ${userNum.length} numero/i: ${userNum} `;
 
     }
 }, 30000)
